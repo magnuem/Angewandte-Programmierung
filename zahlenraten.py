@@ -6,7 +6,7 @@ print("Rate, an welche Zahl ich gerade denke.")
 print("Zwischen 1 und 50.")
 
 guess = int(input())
-count = 1
+count = 0
 
 while guess != geheimzahl:
     if guess < geheimzahl:
