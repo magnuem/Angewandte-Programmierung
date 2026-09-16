@@ -6,12 +6,15 @@ for i in range(5):
     einkauf.append(artikel)
 
 einkauf.sort()
-print(f"Dein Einkauf ist: {einkauf}.")
+print("Deine Einkauf ist:")
+for nummer, artikel in enumerate(einkauf, start=1):
+    print(nummer, artikel)
 
 print("Was möchtest du von der Liste streichen?")
-überflüssig = input()
-einkauf.remove(überflüssig)
+einkauf.remove(input())
 
-print(f"{überflüssig} wird gestrichen.")
-print(f"Deine Einkaufsliste ist jetzt: {einkauf}.")
+print("Deine Einkaufsliste ist jetzt:")
+for nummer, artikel in enumerate(einkauf, start=1):
+    print(nummer, artikel)
+
 print(f"Auf deiner Einkaufsliste sind nun {len(einkauf)} Artikel.")
