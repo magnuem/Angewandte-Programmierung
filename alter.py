@@ -13,4 +13,3 @@ elif age >= 18 and age <= 64:
     print("Du bist im arbeitsfähigen Alter.")
 else:
     print("Du bist im Rentenalter.")
-
